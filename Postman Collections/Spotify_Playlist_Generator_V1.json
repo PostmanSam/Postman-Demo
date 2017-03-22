@@ -10,7 +10,7 @@
     }
   },
   "host": "example.com",
-  "basePath": "",
+  "basePath": "/",
   "securityDefinitions": {
     "auth": {
       "type": "basic",
