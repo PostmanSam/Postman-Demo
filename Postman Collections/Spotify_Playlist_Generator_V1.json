@@ -93,7 +93,11 @@
             "description": ""
           }
         },
-        "security": [],
+        "security": [
+          {
+            "auth": []
+          }
+        ],
         "x-unitTests": [],
         "x-operation-settings": {
           "CollectParameters": false,
@@ -126,7 +130,11 @@
             "description": ""
           }
         },
-        "security": [],
+        "security": [
+          {
+            "auth": []
+          }
+        ],
         "x-unitTests": [],
         "x-operation-settings": {
           "CollectParameters": false,
@@ -161,7 +169,11 @@
             "description": ""
           }
         },
-        "security": [],
+        "security": [
+          {
+            "auth": []
+          }
+        ],
         "x-unitTests": [
           {
             "request": {
@@ -223,7 +235,11 @@
             "description": ""
           }
         },
-        "security": [],
+        "security": [
+          {
+            "auth": []
+          }
+        ],
         "x-unitTests": [],
         "x-operation-settings": {
           "CollectParameters": false,
@@ -262,7 +278,11 @@
             "description": ""
           }
         },
-        "security": [],
+        "security": [
+          {
+            "auth": []
+          }
+        ],
         "x-unitTests": [],
         "x-operation-settings": {
           "CollectParameters": false,
