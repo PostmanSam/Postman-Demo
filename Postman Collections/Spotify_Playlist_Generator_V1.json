@@ -42,13 +42,22 @@
             "name": "grant_type",
             "in": "formData",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "description": ""
           },
           {
             "name": "refresh_token",
             "in": "formData",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
           }
         ],
         "responses": {
@@ -82,10 +91,25 @@
         ],
         "parameters": [
           {
+            "name": "Accept",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "description": ""
           }
         ],
         "responses": {
@@ -119,10 +143,25 @@
         ],
         "parameters": [
           {
+            "name": "Accept",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "description": ""
           }
         ],
         "responses": {
@@ -159,9 +198,31 @@
             "name": "Body",
             "in": "body",
             "required": true,
+            "description": "",
             "schema": {
               "$ref": "#/definitions/CreateAPlaylistrequest"
             }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
           }
         ],
         "responses": {
@@ -180,7 +241,9 @@
               "method": "POST",
               "uri": "/v1/users//playlists",
               "headers": {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+                "Authorization": "Bearer {{authorization}}"
               },
               "body": "{\n  \"name\": \"{{artist_name}} Mix\",\n  \"public\": false\n}"
             },
@@ -221,13 +284,29 @@
             "name": "country",
             "in": "query",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
           },
           {
             "name": "artist_id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "description": ""
           }
         ],
         "responses": {
@@ -264,13 +343,36 @@
             "name": "uris",
             "in": "query",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
           },
           {
             "name": "playlist_id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "description": ""
           }
         ],
         "responses": {
@@ -299,9 +401,11 @@
       "type": "object",
       "properties": {
         "name": {
+          "description": "",
           "type": "string"
         },
         "public": {
+          "description": "",
           "type": "boolean"
         }
       },
