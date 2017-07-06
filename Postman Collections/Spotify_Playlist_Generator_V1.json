@@ -38,6 +38,9 @@
         "produces": [
           "application/json"
         ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
         "parameters": [
           {
             "name": "grant_type",
