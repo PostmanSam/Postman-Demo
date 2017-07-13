@@ -407,6 +407,10 @@
   "definitions": {
     "CreateAPlaylistrequest": {
       "title": "Create a PlaylistRequest",
+      "example": {
+        "name": "{{artist_name}} Mix",
+        "public": false
+      },
       "type": "object",
       "properties": {
         "name": {
