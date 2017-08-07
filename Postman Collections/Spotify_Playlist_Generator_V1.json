@@ -9,8 +9,8 @@
       "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
     }
   },
-  "host": "example.com",
-  "basePath": "/",
+  "host": " https:",
+  "basePath": "//accounts.spotify.com/api",
   "securityDefinitions": {
     "auth": {
       "type": "basic",
@@ -28,7 +28,7 @@
     "application/json"
   ],
   "paths": {
-    "//accounts.spotify.com/api/token": {
+    "/token": {
       "post": {
         "description": "TODO: Add Description",
         "summary": "Get Auth Key",
@@ -84,7 +84,7 @@
         }
       }
     },
-    "/v1/artists/{id}": {
+    "/artists/{id}": {
       "get": {
         "description": "TODO: Add Description",
         "summary": "Get Artist",
@@ -137,7 +137,7 @@
         }
       }
     },
-    "/v1/artists/{id}/related-artists": {
+    "/artists/{id}/related-artists": {
       "get": {
         "description": "TODO: Add Description",
         "summary": "Get Related Artists",
@@ -190,7 +190,7 @@
         }
       }
     },
-    "/v1/users//playlists": {
+    "/users//playlists": {
       "post": {
         "description": "TODO: Add Description",
         "summary": "Create a Playlist",
@@ -247,7 +247,7 @@
           {
             "request": {
               "method": "POST",
-              "uri": "/v1/users//playlists",
+              "uri": "/users//playlists",
               "headers": {
                 "Content-Type": "application/json",
                 "Accept": "application/json",
@@ -277,7 +277,7 @@
         }
       }
     },
-    "/v1/artists/{artist_id}/top-tracks": {
+    "/artists/{artist_id}/top-tracks": {
       "get": {
         "description": "TODO: Add Description",
         "summary": "Get Artist Top Tracks",
@@ -337,7 +337,7 @@
         }
       }
     },
-    "/v1/users//playlists/{playlist_id}/tracks": {
+    "/users//playlists/{playlist_id}/tracks": {
       "post": {
         "description": "TODO: Add Description",
         "summary": "Add Tracks to Playlist",
