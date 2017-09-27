@@ -9,8 +9,8 @@
       "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
     }
   },
-  "host": " https:",
-  "basePath": "//accounts.spotify.com/api",
+  "host": "accounts.spotify.com",
+  "basePath": "/api",
   "securityDefinitions": {
     "auth": {
       "type": "basic",
@@ -18,7 +18,7 @@
     }
   },
   "schemes": [
-    "http"
+    "https"
   ],
   "consumes": [
     "application/json"
