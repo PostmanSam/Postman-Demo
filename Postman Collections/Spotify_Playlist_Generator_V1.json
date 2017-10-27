@@ -320,7 +320,7 @@
         }
       }
     },
-    "/users//playlists/{playlist_id}/tracks": {
+    "/users/playlists/{playlist_id}/tracks": {
       "post": {
         "description": "TODO: Add Description",
         "summary": "Add Tracks to Playlist",
