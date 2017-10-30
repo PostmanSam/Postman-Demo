@@ -74,7 +74,31 @@
             "auth": []
           }
         ],
-        "x-unitTests": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/token",
+              "headers": {
+                "Content-Type": "application/x-www-form-urlencoded",
+                "Authorization": "Basic {{client_credentials}}"
+              },
+              "body": "grant_type=refresh_token&refresh_token="
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Auth Key",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
         "x-operation-settings": {
           "CollectParameters": false,
           "AllowDynamicQueryParameters": false,
