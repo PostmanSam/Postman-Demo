@@ -35,7 +35,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "Get Auth Key",
+        "operationId": "TokenPost",
         "produces": [
           "application/json"
         ],
@@ -115,7 +115,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "Get Artist",
+        "operationId": "ArtistsByIdGet",
         "produces": [
           "application/json"
         ],
@@ -164,7 +164,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "Get Related Artists",
+        "operationId": "ArtistsRelatedArtistsByIdGet",
         "produces": [
           "application/json"
         ],
@@ -213,7 +213,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "Create a Playlist",
+        "operationId": "UsersPlaylistsPost",
         "produces": [
           "application/json"
         ],
@@ -296,7 +296,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "Get Artist Top Tracks",
+        "operationId": "ArtistsTopTracksByArtistIdGet",
         "produces": [
           "application/json"
         ],
@@ -352,7 +352,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "Add Tracks to Playlist",
+        "operationId": "UsersPlaylistsTracksByPlaylistIdPost",
         "produces": [
           "application/json"
         ],
