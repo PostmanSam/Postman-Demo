@@ -420,10 +420,12 @@
       "properties": {
         "name": {
           "description": "",
+          "example": "{{artist_name}} Mix",
           "type": "string"
         },
         "public": {
           "description": "",
+          "example": false,
           "type": "boolean"
         }
       },
