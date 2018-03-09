@@ -26,7 +26,7 @@
   "paths": {
     "/token": {
       "post": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Get Auth Key",
         "tags": [
           "Misc"
@@ -93,7 +93,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Get Auth Key",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -106,7 +106,7 @@
     },
     "/artists/{id}": {
       "get": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Get Artist",
         "tags": [
           "Misc"
@@ -155,7 +155,7 @@
     },
     "/artists/{id}/related-artists": {
       "get": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Get Related Artists",
         "tags": [
           "Misc"
@@ -204,7 +204,7 @@
     },
     "/users//playlists": {
       "post": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Create a Playlist",
         "tags": [
           "Misc"
@@ -274,7 +274,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Create a Playlist",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -287,7 +287,7 @@
     },
     "/artists/{artist_id}/top-tracks": {
       "get": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Get Artist Top Tracks",
         "tags": [
           "Misc"
@@ -343,7 +343,7 @@
     },
     "/users/playlists/{playlist_id}/tracks": {
       "post": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Add Tracks to Playlist",
         "tags": [
           "Misc"
