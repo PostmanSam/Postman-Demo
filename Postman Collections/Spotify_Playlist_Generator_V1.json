@@ -261,7 +261,7 @@
                 "Accept": "application/json",
                 "Authorization": "Bearer {{authorization}}"
               },
-              "body": "{\n  \"name\": \"{{artist_name}} Mix\",\n  \"public\": false\n}"
+              "body": "{\"name\":\"{{artist_name}} Mix\",\"public\":false}"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
