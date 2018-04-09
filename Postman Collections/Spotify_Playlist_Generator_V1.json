@@ -52,13 +52,6 @@
             "required": true,
             "type": "string",
             "description": ""
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -77,8 +70,7 @@
               "method": "POST",
               "uri": "/token",
               "headers": {
-                "Content-Type": "application/x-www-form-urlencoded",
-                "Authorization": "Basic {{client_credentials}}"
+                "Content-Type": "application/x-www-form-urlencoded"
               },
               "body": "grant_type=refresh_token&refresh_token="
             },
@@ -124,13 +116,6 @@
             "description": ""
           },
           {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
             "name": "id",
             "in": "path",
             "required": true,
@@ -143,7 +128,11 @@
             "description": ""
           }
         },
-        "security": [],
+        "security": [
+          {
+            "auth": []
+          }
+        ],
         "x-unitTests": [],
         "x-operation-settings": {
           "CollectParameters": false,
@@ -173,13 +162,6 @@
             "description": ""
           },
           {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
             "name": "id",
             "in": "path",
             "required": true,
@@ -192,7 +174,11 @@
             "description": ""
           }
         },
-        "security": [],
+        "security": [
+          {
+            "auth": []
+          }
+        ],
         "x-unitTests": [],
         "x-operation-settings": {
           "CollectParameters": false,
@@ -231,13 +217,6 @@
             "description": ""
           },
           {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
             "name": "Content-Type",
             "in": "header",
             "required": true,
@@ -250,7 +229,11 @@
             "description": ""
           }
         },
-        "security": [],
+        "security": [
+          {
+            "auth": []
+          }
+        ],
         "x-unitTests": [
           {
             "request": {
@@ -258,8 +241,7 @@
               "uri": "/users//playlists",
               "headers": {
                 "Content-Type": "application/json",
-                "Accept": "application/json",
-                "Authorization": "Bearer {{authorization}}"
+                "Accept": "application/json"
               },
               "body": "{\"name\":\"{{artist_name}} Mix\",\"public\":false}"
             },
@@ -312,13 +294,6 @@
             "description": ""
           },
           {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
             "name": "artist_id",
             "in": "path",
             "required": true,
@@ -331,7 +306,11 @@
             "description": ""
           }
         },
-        "security": [],
+        "security": [
+          {
+            "auth": []
+          }
+        ],
         "x-unitTests": [],
         "x-operation-settings": {
           "CollectParameters": false,
@@ -368,13 +347,6 @@
             "description": ""
           },
           {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
             "name": "Content-Type",
             "in": "header",
             "required": true,
@@ -394,7 +366,11 @@
             "description": ""
           }
         },
-        "security": [],
+        "security": [
+          {
+            "auth": []
+          }
+        ],
         "x-unitTests": [],
         "x-operation-settings": {
           "CollectParameters": false,
