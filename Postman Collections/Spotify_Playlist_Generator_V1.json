@@ -201,15 +201,6 @@
         ],
         "parameters": [
           {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/CreateAPlaylistrequest"
-            }
-          },
-          {
             "name": "Accept",
             "in": "header",
             "required": true,
@@ -222,6 +213,15 @@
             "required": true,
             "type": "string",
             "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateAPlaylistrequest"
+            }
           }
         ],
         "responses": {
@@ -240,8 +240,8 @@
               "method": "POST",
               "uri": "/users//playlists",
               "headers": {
-                "Content-Type": "application/json",
-                "Accept": "application/json"
+                "Accept": "application/json",
+                "Content-Type": "application/json"
               },
               "body": "{\"name\":\"{{artist_name}} Mix\",\"public\":false}"
             },
