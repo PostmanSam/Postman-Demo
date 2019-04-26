@@ -7,7 +7,6 @@
   },
   "item": [
     {
-      "_postman_id": "1246657-34110da5-b371-a3c0-0b72-6397b0feb33b",
       "name": "Get Auth Key",
       "event": [
         {
@@ -49,6 +48,7 @@
           }
         }
       ],
+      "_postman_id": "1246657-34110da5-b371-a3c0-0b72-6397b0feb33b",
       "request": {
         "method": "POST",
         "header": [
@@ -77,7 +77,6 @@
       "response": []
     },
     {
-      "_postman_id": "1246657-42bd47b4-48a1-4b6c-3bd7-deb8d2ca0362",
       "name": "Get Artist",
       "event": [
         {
@@ -118,6 +117,7 @@
           }
         }
       ],
+      "_postman_id": "1246657-42bd47b4-48a1-4b6c-3bd7-deb8d2ca0362",
       "request": {
         "method": "GET",
         "header": [
@@ -130,13 +130,15 @@
             "value": "Bearer {{authorization}}"
           }
         ],
-        "body": {},
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
         "url": "https://api.spotify.com/v1/artists/{{id}}"
       },
       "response": []
     },
     {
-      "_postman_id": "1246657-0bdf870f-3408-f7b2-fec0-6de33b64e515",
       "name": "Get Related Artists",
       "event": [
         {
@@ -168,6 +170,7 @@
           }
         }
       ],
+      "_postman_id": "1246657-0bdf870f-3408-f7b2-fec0-6de33b64e515",
       "request": {
         "method": "GET",
         "header": [
@@ -180,13 +183,15 @@
             "value": "Bearer {{authorization}}"
           }
         ],
-        "body": {},
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
         "url": "https://api.spotify.com/v1/artists/{{id}}/related-artists"
       },
       "response": []
     },
     {
-      "_postman_id": "1246657-7d19d672-efcc-8c64-b95e-22aff6895c52",
       "name": "Create a Playlist",
       "event": [
         {
@@ -208,6 +213,7 @@
           }
         }
       ],
+      "_postman_id": "1246657-7d19d672-efcc-8c64-b95e-22aff6895c52",
       "request": {
         "method": "POST",
         "header": [
@@ -233,7 +239,6 @@
       "response": []
     },
     {
-      "_postman_id": "1246657-f4ef470e-e244-46c2-81e5-7bbbc24a8a6a",
       "name": "Get Artist Top Tracks",
       "event": [
         {
@@ -270,6 +275,7 @@
           }
         }
       ],
+      "_postman_id": "1246657-f4ef470e-e244-46c2-81e5-7bbbc24a8a6a",
       "request": {
         "method": "GET",
         "header": [
@@ -282,7 +288,10 @@
             "value": "Bearer {{authorization}}"
           }
         ],
-        "body": {},
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
         "url": {
           "raw": "https://api.spotify.com/v1/artists/{{artist_id}}/top-tracks?country=US",
           "protocol": "https",
@@ -308,7 +317,6 @@
       "response": []
     },
     {
-      "_postman_id": "1246657-b0edb25e-df91-d01c-3522-c1d3040e06a0",
       "name": "Add Tracks to Playlist",
       "event": [
         {
@@ -361,6 +369,7 @@
           }
         }
       ],
+      "_postman_id": "1246657-b0edb25e-df91-d01c-3522-c1d3040e06a0",
       "request": {
         "method": "POST",
         "header": [
@@ -377,7 +386,10 @@
             "value": "application/json"
           }
         ],
-        "body": {},
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
         "url": {
           "raw": "https://api.spotify.com/v1/users//playlists/{{playlist_id}}/tracks?uris={{uris}}",
           "protocol": "https",
