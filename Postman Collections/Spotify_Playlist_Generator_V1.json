@@ -1,137 +1,349 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>APIMATIC - Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    
-    
-
-    
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css" rel="stylesheet" />
-<link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.min.css"
-          integrity="sha256-nVXk5aDYc/D4r9OoqxZ5H6vpIAqAG5BhVuIdOihDN1c="
-          crossorigin="anonymous" />
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-
-<link href="/bundles/front-css?v=11O7jOwdtFxvmVBTuhI4jW7gL4oZccYpht3O4dmVJC41" rel="stylesheet"/>
-
-    <link href="/bundles/onboarding-css?v=m1CDG8GUR5u_P3QvyzJOWHlZKrHcnVPf442vvOhB4h41" rel="stylesheet"/>
-
-
-    
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-
-    <!-- FAVICON START -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!-- FAVICON END -->
-
-</head>
-<body>
-    <div class="container onboarding-container">
-            <div class="onboarding-container-centered ">
-                
-
-
-
-<header class="flex flex-col align-center">
-    <div class="icon">
-        <a href="/">
-            <img class="mx-auto d-block" alt="APIMATIC logo" title="Welcome to APIMATIC" src="/imgs/apimatic-logo.svg" />
-        </a>
-    </div>
-    <div class="content">
-        <p>Login to your account</p>
-    </div>
-
-</header>
-<section class="form-wrapper flex flex-col">
-
-<form action="/account/login?ReturnUrl=%2Fapi%2Ftransform%3Fformat%3Dswagger20%26apikey%3DmONZg6E9hVHp7-WXsHucCGl-lXLvzN0t9GGEQ_s1xgrILHdXq_d50wEd8ptizzQN" id="loginForm" method="post" novalidate="True" role="form"><input name="__RequestVerificationToken" type="hidden" value="56frruASsx7Kl4hrQwcXTFk1NhOMcr1KIDzDmTyIAmot23Ue5lf01vwmUbXN2BdtAD2z78azLH1OPMiQ2NIdU2kvYHq-OGMWsAteGQbUkp41" /><div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
-</ul></div>        <div class="form-group">
-            <label class="mb-1" for="signInInputEmail1">
-                Email
-            </label>
-            <input class="form-control form-control-sm" data-Validation="email" data-val="true" data-val-email="The Email Address field is not a valid e-mail address." data-val-required="Email is required" id="Email" name="Email" placeholder="Enter email here" required="required" tabindex="2" type="email" value="" />
-
-        </div>
-        <div class="form-group mb-0">
-            <label class="mb-1" for="signInInputPassword">
-                Password
-            </label>
-            <a class="forgot-password" href="/account/forgotpassword?Length=7">Forgot password?</a>
-            <input class="form-control extra-padding-right" data-title="Caps lock is on" data-toggle="tooltip" data-trigger="manual" data-val="true" data-val-required="Password is required" id="js-onboarding-password-field" name="Password" placeholder="Password" required="true" type="password" />
-            <i class="fa fa-eye onboarding-show-password-icon" id="js-onboarding-show-password-icon"></i>
-        </div>
-        <div class="checkbox">
-            <label>
-                <input class="custom-control-input" data-val="true" data-val-required="The Remember me? field is required." id="customControlInline" name="RememberMe" tabindex="4" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />
-                Remember me
-            </label>
-        </div>
-        <button type="submit" class="btn btn-primary btn-sm btn-block" tabindex="5">
-            Login
-        </button>
-        <a href="/account/register" class="btn btn-white btn-sm btn-block" tabindex="6">
-            Sign Up
-        </a>
-</form></section>
-
-            </div>
-    </div>
-</body>
-</html>
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
-
-<script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
-
-<script src="/bundles/front-js?v="></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-<script>
-    $.validate({
-        modules: 'date, security'
-    });
-</script>
-<script src="/bundles/onboarding-js?v=2h6We__p_84-tByynY6kDWiE-iuM8Pigjw1rycnNaQY1"></script>
-
-
-
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Spotify Playlist Generator V1",
+    "description": "<a href=\"https://docs.google.com/drawings/d/11GIo2IAQmictmFJuxIJ3sj1zi_nFSDlm_uJMLa9I3WE/pub?w=1410&amp;h=772\" target=\"_blank\"><img src=\"https://docs.google.com/drawings/d/11GIo2IAQmictmFJuxIJ3sj1zi_nFSDlm_uJMLa9I3WE/pub?w=1410&amp;h=772\"></a>\n\nThe Spotify playlist generator collection lets you get your daily/weekly dose of fresh music. Modeled on the AMAZING [Spotify Discover Weekly](https://www.spotify.com/discoverweekly/), within 5 minutes you'll be able to set this up, and even tweak it to your heart's content!\n\n### Workflow\n\n<a href=\"https://docs.google.com/drawings/d/1p7imXUIWIC9t5vX4B5jD2XuY6MoYOYcT9I9gJVi87ic/pub?w=1532&amp;h=241\" target=\"_blank\">\n<img src=\"https://docs.google.com/drawings/d/1p7imXUIWIC9t5vX4B5jD2XuY6MoYOYcT9I9gJVi87ic/pub?w=1532&amp;h=241\"></a>\n\n1. Take a list of artists as input\n2. Randomly select an artist from this list and usse Spotify's fantastic [Get Related Artists](https://developer.spotify.com/web-api/console/get-artist-related-artists/) and [Get an Artist's top tracks](https://developer.spotify.com/web-api/console/get-artist-top-tracks/) APIs to mashup a playlist\n3. Add these related artists back to the original list and persist back to the environment\n\n### Setup the Environment\n\nClick on the Run in Postman button above to import the collection and environment template within your app.\n\n1. ##### Spotify\n    * Head to [Spotify Developer](https://developer.spotify.com) and register, then create a new app in the My Applications section. Add the `client_id` and `client_secret` to your environment.\n    * Under the newly created app config, add the following Redirect URI - `https://www.getpostman.com/oauth2/callback`\n    * We'll use the [Authorization Code Flow](https://developer.spotify.com/web-api/authorization-guide/#authorization-code-flow) to obtain the Refresh Token.\n    * Open Postman, under a new request, click on the Authorization tab, select OAuth 2.0 and fill in these values:\n    - Token Name: can be anything\n      - Auth URL: https://accounts.spotify.com/authorize\n      - Access Token URL: https://accounts.spotify.com/api/token\n      - Client ID: \n      - Client Secret: \n      - [Scope](https://developer.spotify.com/web-api/authorization-guide/#scopes): `playlist-read-private playlist-modify-private`\n      - Grant Type: Authorization Code\n      - Request access token locally: Checked\n  * Click on Request Token, go through the OAuth flow, and add the `refresh_token` to your environment\n\n2. ##### Collection Config\n  Set the following variables in your environment\n  * `user_id`: your spotify username\n  * `country_code`:  in [ISO 3166-1](http://en.wikipedia.org/wiki/ISO3166-1alpha-2) format\n  * `N`: defaults to 5. Refer to the algorithm section for more details\n  * `artists`: List of seed artists for the collection. You can find them as part of the Spotify artist link (Available in the app): e.g. for Oasis, the link looks something like https://open.spotify.com/artist/2DaxqgrOhkeH0fpeiQq2f4, choose the last section. The artists variable is an array of strings, so it'll look something like: [\"2DaxqgrOhkeH0fpeiQq2f4\", \"2ooIqOf4X2uz4mMptXCtie\"]\n\n### Run the Collection\n\n1. To verify that everything works as expected, run the collection in the Postman app using the [Collection Runner](https://www.getpostman.com/docs/running_collections)\n2. The same collection executes in [Newman](https://github.com/postmanlabs/newman) as well. Just export the Collection and Environment files and execute the following command\n\n```\nnewman -c SpotifyPLGen.json.postman_collection -e SpotifyPlGen.json.postman_environment\n```\n",
+    "contact": {}
+  },
+  "host": "accounts.spotify.com",
+  "basePath": "/api",
+  "securityDefinitions": {
+    "auth": {
+      "type": "basic"
+    }
+  },
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/token": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Get Auth Key",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "TokenPost",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "name": "grant_type",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "refresh_token",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/artists/{id}": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Artist",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ArtistsByIdGet",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/artists/{id}/related-artists": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Related Artists",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ArtistsRelatedArtistsByIdGet",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/users//playlists": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Create a Playlist",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "UsersPlaylistsPost",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateaPlaylistRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/artists/{artist_id}/top-tracks": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Artist Top Tracks",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ArtistsTopTracksByArtistIdGet",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "country",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "artist_id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/users/playlists/{playlist_id}/tracks": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Add Tracks to Playlist",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "UsersPlaylistsTracksByPlaylistIdPost",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "uris",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "playlist_id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    }
+  },
+  "definitions": {
+    "CreateaPlaylistRequest": {
+      "title": "CreateaPlaylistRequest",
+      "example": {
+        "name": "{{artist_name}} Mix",
+        "public": false
+      },
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "public": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "name",
+        "public"
+      ]
+    }
+  },
+  "security": [
+    {
+      "auth": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}
