@@ -30,7 +30,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "TokenPost",
+        "operationId": "GetAuthKey",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -69,7 +69,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "ArtistsByIdGet",
+        "operationId": "GetArtist",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -113,7 +113,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "ArtistsRelatedArtistsByIdGet",
+        "operationId": "GetRelatedArtists",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -157,7 +157,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "UsersPlaylistsPost",
+        "operationId": "CreateaPlaylist",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -210,7 +210,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "ArtistsTopTracksByArtistIdGet",
+        "operationId": "GetArtistTopTracks",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -261,7 +261,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "UsersPlaylistsTracksByPlaylistIdPost",
+        "operationId": "AddTrackstoPlaylist",
         "deprecated": false,
         "produces": [
           "application/json"
