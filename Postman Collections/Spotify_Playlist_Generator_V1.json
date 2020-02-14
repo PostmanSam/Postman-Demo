@@ -158,6 +158,9 @@
         "produces": [
           "application/json"
         ],
+        "consumes": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "Accept",
@@ -258,6 +261,9 @@
         "operationId": "AddTrackstoPlaylist",
         "deprecated": false,
         "produces": [
+          "application/json"
+        ],
+        "consumes": [
           "application/json"
         ],
         "parameters": [
